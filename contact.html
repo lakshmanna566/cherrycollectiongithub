@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Contact — Cherry Collection</title><link rel="stylesheet" href="css/style.css"/></head><body>
+<header class="site-header"><div class="container header-inner"><div class="logo">KYLIE COSMETICS</div><nav class="main-nav"><a href="index.html">Home</a><a href="index.html#shop">Shop</a><a href="about.html">About</a><a href="contact.html" class="active">Contact</a><a href="cart.html">Cart</a></nav></div></header>
+<main class="container contact-page"><h1>Contact</h1><p>If you'd like to reach out about this project, email <a href="mailto:hasini@example.com">hasini@example.com</a></p>
+<form id="contact-form" class="contact-form"><label>Name<input type="text" id="name" required></label><label>Email<input type="email" id="email" required></label><label>Message<textarea id="message" rows="5" required></textarea></label><button type="submit" class="btn-primary">Send Message</button><p id="contact-feedback" class="feedback" aria-hidden="true"></p></form></main>
+<footer class="site-footer"><div class="container">© 2025 Cherry Collection — Project by Hasini</div></footer>
+<script>document.getElementById('contact-form').addEventListener('submit', function(e){e.preventDefault();document.getElementById('contact-feedback').textContent='Thanks — your message was recorded (demo).';document.getElementById('contact-feedback').style.display='block';this.reset();});</script>
+</body></html>

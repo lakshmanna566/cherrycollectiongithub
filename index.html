@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cherry Collection — Project by Hasini</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">KYLIE COSMETICS</div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="images/banner.png" alt="Banner" class="hero-image" />
+    <div class="hero-overlay">
+      <h1>The Cherry Collection</h1>
+      <p>Sweet, Seductive, and Bold. Discover the new look.</p>
+      <button id="shop-now" class="btn-primary">Shop Now</button>
+    </div>
+  </section>
+
+  <div class="project-by">Project by Hasini</div>
+
+  <main class="container">
+    <section id="shop" class="featured">
+      <h2>Featured Items</h2>
+      <div class="product-grid" id="products-container"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 Cherry Collection — Project by Hasini</div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="product-modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-inner">
+      <button id="modal-close" class="modal-close">×</button>
+      <img id="modal-img" src="" alt="">
+      <div class="modal-body">
+        <h3 id="modal-title"></h3>
+        <p id="modal-price"></p>
+        <p id="modal-desc"></p>
+        <div class="modal-actions">
+          <button id="modal-add" class="btn-primary">Add to Cart</button>
+          <button id="modal-close-2" class="btn-outline">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>const PRODUCTS = [{"id": 1, "name": "Lip Kit - Cherry Red", "price": 24.0, "img": "images/product1.png", "desc": ""}, {"id": 2, "name": "Cherry Blush", "price": 28.0, "img": "images/product2.png", "desc": ""}, {"id": 3, "name": "Black Cherry Eyeliner", "price": 19.0, "img": "images/product3.png", "desc": ""}, {"id": 4, "name": "Liquid Lipstick - Velvet", "price": 22.0, "img": "images/product4.png", "desc": ""}, {"id": 5, "name": "Radiant Highlighter", "price": 30.0, "img": "images/product5.png", "desc": ""}, {"id": 6, "name": "Cherry Lip Gloss", "price": 18.0, "img": "images/product6.png", "desc": ""}, {"id": 7, "name": "Cherry Eyeshadow Palette", "price": 45.0, "img": "images/product7.png", "desc": ""}, {"id": 8, "name": "Soft Bronzer", "price": 26.0, "img": "images/product8.png", "desc": ""}, {"id": 9, "name": "Precision Pencil Liner", "price": 14.0, "img": "images/product9.png", "desc": ""}];</script>
+  <script src="js/script.js"></script>
+</body>
+</html>
